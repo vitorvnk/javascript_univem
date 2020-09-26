@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang='pt-br'> 
+    <head> 
+        <title>Formulário</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="../Estilo.css" />
+         
+    </head>
+    <body> 
+        <div id="wrap">
+            <section id="stylesite">
+                <h1>Formulário</h1>
+                
+                <form method="GET" action="mailto:vitor.vnk@gmail.com">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome" name="Nome"/>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Digite seu email" name="Email"/>
+
+                    <label for="Opção">Você gostou do Site?</label>
+                    <input type="radio" name="opção" value="Sim" checked="checked" />Sim
+                    <input type="radio" name="opção" value="Não" />Não
+
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="msg"></textarea>
+
+                    <input type="submit" value="Enviar" />
+                </form>
+            </section>
+        </div>
+    </body> 
+</html> 
