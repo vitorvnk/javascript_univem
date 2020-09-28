@@ -9,37 +9,22 @@ async function buscarCep(event) {
         let endereco = await res.json();
         let cidade = document.querySelector("form input[name=cidade]");
         cidade.value = endereco.localidade;
-        let bairro = document.querySelector("form input[name=bairro]");
-        bairro.value = endereco.bairro;
         let uf = document.querySelector("form input[name=uf]");
         uf.value = endereco.uf;
+        let bairro = document.querySelector("form input[name=bairro]");
+        bairro.value = endereco.bairro;
         let logradouro = document.querySelector("form input[name=logradouro]");
         logradouro.value = endereco.logradouro;
         let numero = document.querySelector("form input[name=numero]");
 
-        if (bairro.status == undefined) {
-            cont += 1
-        }
-        if (logradouro.status == undefined) {
-            cont += 1
-        }
-        if (numero.status == undefined) {
-            cont += 1
-        }
-
-
-
-        if (cont == 3) {
+        if (bairro.value == "") {
             bairro.focus();
-        }
-        if (cont == 2) {
+        } else if (logradouro.value == "") {
             logradouro.focus();
-        }
-        if (cont == 1) {
+        } else if (numero.value == "") {
             numero.focus();
         }
-        alert(numero)
-
+        console.log(numero.value);
     }
 }
 

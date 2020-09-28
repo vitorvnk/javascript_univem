@@ -3,13 +3,7 @@ function carregarConteudo() {
     let html = "";
     switch (path) { // verifica qual é a rota
         case "/":
-            html = "/src/formulario.html";
-            break;
-        case "/novaPagina":
-            html = "/src/novapagina.html";
-            break;
-        case "/primo":
-            html = "/src/primo.html";
+            html = "/src/inicial.html";
             break;
         case "/categoria":
             html = "/src/list_categoria.html";
@@ -36,7 +30,7 @@ function carregarConteudo() {
                 resposta => resposta.text() // Segunda Promise
             )
             // quando a resposta for transformada em string
-            .then(function (texto) {
+            .then(function(texto) {
                 container.innerHTML = texto;
                 window.dispatchEvent(new Event("carregoupagina"));
             });

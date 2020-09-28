@@ -1,4 +1,30 @@
-/* input {
-    border: 5px solid #f00;
-    margin: 20px;
-} */
+#c-wrap {
+    background-color: white;
+    border-radius: 10px;
+    width: 850px;
+    margin: auto;
+    padding: 10px 20px;
+    overflow: hidden;
+    @media screen and (min-width: 300px) {
+        column {
+            width: 100%;
+        }
+    }
+}
+
+#c-content {
+    float: left;
+    width: 760px;
+}
+
+#c-stylesite {
+    color: black;
+    width: 850px;
+    margin: auto;
+}
+
+#c-styletext {
+    color: black;
+    display: auto;
+    text-justify: inherit;
+}
