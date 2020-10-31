@@ -1,0 +1,58 @@
+
+<div class="container">
+    <h3>Formulário Produto</h3><br>
+    <form onsubmit="saveProduto(event)">
+        <div class="row"> <!-- row = "linha" em ingles -->
+            <div class="col-lg-12"> <!-- ocupar 6 colunas (lg = large)-->
+                <div class="form-group">
+                    <label>Nome: </label>
+                    <input class="form-control" type="text" name="nome">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label>Descrição: </label>
+                    <input class="form-control" type="text" name="descricao">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label>Preço: </label>
+                    <input step="0.01" class="form-control" type="number" name="preco">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label>Estoque: </label>
+                    <input class="form-control" type="number" name="estoque">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label>Categoria: </label>
+                    <select class="form-control" id="categoria_select" name="categoria"></select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>URL Imagem: </label>
+                    <input class="form-control" type="url" name="image" id="image">
+                    <button type="button" class="btn btn-outline-dark btn-sm" onclick="imagemload()">Pesquisar</button>
+                    <div class="load-img" id="load-img"></div>
+                    
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        <div class="row justify-content-md-center">
+            <button class="btn btn-outline-success" type="submit">Salvar</button>
+        </div>
+    </form>
+</div>

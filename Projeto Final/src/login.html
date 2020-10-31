@@ -1,0 +1,32 @@
+
+<div class="container">
+    <h3>Entrar</h3>
+    <form method="POST" onsubmit="logar(event)">
+        <div class="row"> <!-- row = "linha" em ingles -->
+            <div class="col-lg-12"> <!-- ocupar 6 colunas (lg = large)-->
+                <div class="form-group">
+                    <div class="exampleInputEmail1">
+                        <label>E-mail: </label>
+                        <input class="form-control" type="email" name="email">
+                        <small id="sEmailLog" class="form-text text-danger"></small>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <div class="exampleInputPassword1">
+                        <label>Password: </label>
+                        <input class="form-control" type="password" name="password">
+                        <small id="sSenhaLog" class="form-text text-danger"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+                <button class="btn btn-outline-success"  type="submit">Entrar</button>
+        </div>
+    </form>
+</div>
